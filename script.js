@@ -56,7 +56,7 @@ function showInfo() {
 		target_loose_pulp_viscosity: target_loose_pulp_viscosity,
 	};
 	console.log(data)
-	postData('https://checkproject2-337711.el.r.appspot.com/main/dosage/all', data).then(() => console.log("OK"));
+	postData('https://checkproject2-337711.el.r.appspot.com/main/dosage/all/', data).then(() => console.log("OK"));
 }
 
 async function postData(url, data = {}) {
